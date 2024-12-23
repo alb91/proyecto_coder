@@ -1,0 +1,142 @@
+[
+  {
+    "id": 1,
+    "title": "Laptop HP Spectre x360",
+    "description": "Laptop convertible con procesador Intel Core i7, 16GB de RAM, y 512GB de SSD.",
+    "code": "LP001",
+    "price": 1500,
+    "status": true,
+    "stock": 25,
+    "category": "Electrónica",
+    "thumbnails": [
+      "laptop1.jpg",
+      "laptop2.jpg"
+    ]
+  },
+  {
+    "id": 2,
+    "title": "Smartphone Samsung Galaxy S23",
+    "description": "Smartphone con pantalla AMOLED de 6.1 pulgadas, cámara de 50MP y 128GB de almacenamiento.",
+    "code": "SP002",
+    "price": 799,
+    "status": true,
+    "stock": 100,
+    "category": "Tecnología",
+    "thumbnails": [
+      "smartphone1.jpg",
+      "smartphone2.jpg"
+    ]
+  },
+  {
+    "id": 3,
+    "title": "Auriculares Bose QuietComfort 35 II",
+    "description": "Auriculares con cancelación de ruido, conectividad Bluetooth y batería de larga duración.",
+    "code": "AU003",
+    "price": 299,
+    "status": true,
+    "stock": 50,
+    "category": "Accesorios",
+    "thumbnails": [
+      "auriculares1.jpg",
+      "auriculares2.jpg"
+    ]
+  },
+  {
+    "id": 4,
+    "title": "Camiseta Nike Dri-FIT",
+    "description": "Camiseta deportiva de la marca Nike, fabricada con tecnología Dri-FIT para mantenerte seco.",
+    "code": "CA004",
+    "price": 25,
+    "status": true,
+    "stock": 200,
+    "category": "Ropa",
+    "thumbnails": [
+      "camiseta1.jpg",
+      "camiseta2.jpg"
+    ]
+  },
+  {
+    "id": 5,
+    "title": "Cafetera DeLonghi Magnifica",
+    "description": "Cafetera de espresso automática con molinillo integrado y pantalla digital.",
+    "code": "CF005",
+    "price": 499,
+    "status": true,
+    "stock": 10,
+    "category": "Hogar",
+    "thumbnails": [
+      "cafetera1.jpg",
+      "cafetera2.jpg"
+    ]
+  },
+  {
+    "id": 6,
+    "title": "Juguete LEGO Star Wars Millennium Falcon",
+    "description": "Set de construcción LEGO Star Wars, incluye 7 minifiguras y 1,351 piezas.",
+    "code": "LE006",
+    "price": 159,
+    "status": true,
+    "stock": 75,
+    "category": "Juguetes",
+    "thumbnails": [
+      "lego1.jpg",
+      "lego2.jpg"
+    ]
+  },
+  {
+    "id": 7,
+    "title": "Smartwatch Fitbit Charge 5",
+    "description": "Smartwatch con monitoreo de actividad física, GPS integrado y medición de ritmo cardíaco.",
+    "code": "SW007",
+    "price": 179,
+    "status": true,
+    "stock": 120,
+    "category": "Accesorios",
+    "thumbnails": [
+      "smartwatch1.jpg",
+      "smartwatch2.jpg"
+    ]
+  },
+  {
+    "id": 8,
+    "title": "Mochila Jansport Superbreak",
+    "description": "Mochila clásica con múltiples compartimentos y respaldo acolchado para mayor comodidad.",
+    "code": "MO008",
+    "price": 45,
+    "status": true,
+    "stock": 150,
+    "category": "Accesorios",
+    "thumbnails": [
+      "mochila1.jpg",
+      "mochila2.jpg"
+    ]
+  },
+  {
+    "id": 9,
+    "title": "Cámara Digital Canon EOS Rebel T7",
+    "description": "Cámara DSLR con lente de 18-55mm, grabación de video Full HD y sensor CMOS de 24.1MP.",
+    "code": "CA009",
+    "price": 549,
+    "status": true,
+    "stock": 30,
+    "category": "Fotografía",
+    "thumbnails": [
+      "camara1.jpg",
+      "camara2.jpg"
+    ]
+  },
+  {
+    "id": 10,
+    "title": "Bicicleta de Montaña Trek Marlin 7",
+    "description": "Bicicleta de montaña de 21 velocidades con suspensión delantera, ideal para terrenos irregulares.",
+    "code": "BI010",
+    "price": 649,
+    "status": true,
+    "stock": 45,
+    "category": "Deportes",
+    "thumbnails": [
+      "bicicleta1.jpg",
+      "bicicleta2.jpg"
+    ]
+  }
+]
