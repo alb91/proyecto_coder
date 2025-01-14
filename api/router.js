@@ -99,5 +99,5 @@ router.delete('/:pid', async (req, res) => {
 	res.status(200).json({message: "Producto eliminado"});
 });
 
-module.exports = router; 
+module.exports = { router, readProducts }; 
 

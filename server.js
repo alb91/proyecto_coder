@@ -3,7 +3,7 @@ const http = require('http');
 const { Server } = require('socket.io'); 
 const { engine } = require('express-handlebars');
 const path = require('path');  
-const productRouter = require('./api/router'); 
+const { router: productRouter, readProducts } = require('./api/router'); 
 const cartRouter = require('./api/carts');
 
 
@@ -31,6 +31,11 @@ app.use('/api/carts', cartRouter);
 app.get('/', (req, res) => {
 	res.render('home', {title: 'Inicio', message: 'Esto es handlebars'});
 });
+
+app.get('/home', async (req, res) => {
+	const products = await readProducts();
+	res.render('home', { products }); 
+})
 
 io.on('connection', (socket) => {
 	console.log('Nueva conexión');
