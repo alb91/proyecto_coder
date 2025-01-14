@@ -1,0 +1,41 @@
+<h1>Lista en Tiempo Real</h1>
+<ul id="product-list">
+  {{#each products}}
+    <li id="product-{{id}}">{{title}} - ${{price}}</li>
+  {{/each}}
+</ul>
+
+<script>
+  const socket = io();
+
+  socket.on('connect', () => {
+    console.log('Conectado al servidor');
+  });
+
+  socket.on('productList', (products) => {
+    const productList = document.getElementById('product-list');
+    productList.innerHTML = '';
+
+    products.forEach(product => {
+      const li = document.createElement('li');
+      li.id = `product-${product.id}`;
+      li.textContent = `${product.title} - $${product.price}`;
+      productList.appendChild(li);
+    });
+  });
+
+  socket.on('productAdded', (product) => {
+    const productList = document.getElementById('product-list');
+    const li = document.createElement('li');
+    li.id = `product-${product.id}`;
+    li.textContent = `${product.title} - $${product.price}`;
+    productList.appendChild(li);
+  });
+
+  socket.on('productRemoved', (productId) => {
+    const productElement = document.getElementById(`product-${productId}`);
+    if (productElement) {
+      productElement.remove();
+    }
+  });
+</script>

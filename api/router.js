@@ -59,6 +59,7 @@ router.post('/', async (req, res) => {
 
 	products.push(newProduct);
 	await writeProducts(products);
+	req.io.emit('productAdded', newProduct); 
 	res.status(201).json(newProduct); 
 }); 
 
@@ -96,6 +97,7 @@ router.delete('/:pid', async (req, res) => {
 
 	products.splice(productIndex, 1);
 	await writeProducts(products);
+	io.emit('productRemoved', pid);
 	res.status(200).json({message: "Producto eliminado"});
 });
 

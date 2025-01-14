@@ -138,5 +138,75 @@
       "bicicleta1.jpg",
       "bicicleta2.jpg"
     ]
+  },
+  {
+    "id": 11,
+    "title": "Laptop",
+    "description": "Laptop de última generación",
+    "code": "LAP123",
+    "price": 1500,
+    "status": true,
+    "stock": 10,
+    "category": "Electrónica",
+    "thumbnails": [
+      "imagen1.jpg",
+      "imagen2.jpg"
+    ]
+  },
+  {
+    "id": 12,
+    "title": "Test",
+    "description": "Test de última generación",
+    "code": "LAP123",
+    "price": 1500,
+    "status": true,
+    "stock": 10,
+    "category": "Electrónica",
+    "thumbnails": [
+      "imagen1.jpg",
+      "imagen2.jpg"
+    ]
+  },
+  {
+    "id": 13,
+    "title": "Test2",
+    "description": "Test de última generación",
+    "code": "LAP123",
+    "price": 1500,
+    "status": true,
+    "stock": 10,
+    "category": "Electrónica",
+    "thumbnails": [
+      "imagen1.jpg",
+      "imagen2.jpg"
+    ]
+  },
+  {
+    "id": 14,
+    "title": "Test3",
+    "description": "Test de última generación",
+    "code": "LAP123",
+    "price": 1500,
+    "status": true,
+    "stock": 10,
+    "category": "Electrónica",
+    "thumbnails": [
+      "imagen1.jpg",
+      "imagen2.jpg"
+    ]
+  },
+  {
+    "id": 15,
+    "title": "Test4",
+    "description": "Test de última generación",
+    "code": "LAP123",
+    "price": 1500,
+    "status": true,
+    "stock": 10,
+    "category": "Electrónica",
+    "thumbnails": [
+      "imagen1.jpg",
+      "imagen2.jpg"
+    ]
   }
 ]

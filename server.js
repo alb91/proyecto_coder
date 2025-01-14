@@ -24,7 +24,14 @@ app.set('views', path.join(__dirname, 'views'));
 app.use(express.static(path.join(__dirname, 'public'))); 
 
 // Rutas API 
-app.use('/api/products', productRouter); 
+app.use(
+	'/api/products',
+	(req, res, next) => {
+		req.io = io; 
+		next(); 
+	},
+	productRouter
+); 
 app.use('/api/carts', cartRouter);
 
 // Ruta Handlebars
@@ -35,12 +42,18 @@ app.get('/', (req, res) => {
 app.get('/home', async (req, res) => {
 	const products = await readProducts();
 	res.render('home', { products }); 
-})
+});
 
-io.on('connection', (socket) => {
-	console.log('Nueva conexión');
+app.get('/realtimeproducts', async (req, res) => {
+	const products = await readProducts(); 
+	res.render('realTimeProducts', { products });
+}); 
 
-	socket.emit('message', 'Bienvenido al servidor'); 
+io.on('connection', async (socket) => {
+	console.log('Nueva conexión:', socket.id);
+
+	const products = await readProducts(); 
+	socket.emit('productList', products); 
 
 	socket.on('disconnect', () => {
 		console.log('Cliente desconectado');
