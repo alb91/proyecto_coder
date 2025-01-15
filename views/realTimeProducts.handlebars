@@ -5,12 +5,9 @@
   {{/each}}
 </ul>
 
+<script src="/socket.io/socket.io.js"></script>
 <script>
   const socket = io();
-
-  socket.on('connect', () => {
-    console.log('Conectado al servidor');
-  });
 
   socket.on('productList', (products) => {
     const productList = document.getElementById('product-list');

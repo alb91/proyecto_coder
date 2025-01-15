@@ -1,19 +1,5 @@
 [
   {
-    "id": 1,
-    "title": "Laptop HP Spectre x360",
-    "description": "Laptop convertible con procesador Intel Core i7, 16GB de RAM, y 512GB de SSD.",
-    "code": "LP001",
-    "price": 1500,
-    "status": true,
-    "stock": 25,
-    "category": "Electrónica",
-    "thumbnails": [
-      "laptop1.jpg",
-      "laptop2.jpg"
-    ]
-  },
-  {
     "id": 2,
     "title": "Smartphone Samsung Galaxy S23",
     "description": "Smartphone con pantalla AMOLED de 6.1 pulgadas, cámara de 50MP y 128GB de almacenamiento.",
@@ -170,34 +156,6 @@
   {
     "id": 13,
     "title": "Test2",
-    "description": "Test de última generación",
-    "code": "LAP123",
-    "price": 1500,
-    "status": true,
-    "stock": 10,
-    "category": "Electrónica",
-    "thumbnails": [
-      "imagen1.jpg",
-      "imagen2.jpg"
-    ]
-  },
-  {
-    "id": 14,
-    "title": "Test3",
-    "description": "Test de última generación",
-    "code": "LAP123",
-    "price": 1500,
-    "status": true,
-    "stock": 10,
-    "category": "Electrónica",
-    "thumbnails": [
-      "imagen1.jpg",
-      "imagen2.jpg"
-    ]
-  },
-  {
-    "id": 15,
-    "title": "Test4",
     "description": "Test de última generación",
     "code": "LAP123",
     "price": 1500,

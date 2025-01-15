@@ -97,7 +97,7 @@ router.delete('/:pid', async (req, res) => {
 
 	products.splice(productIndex, 1);
 	await writeProducts(products);
-	io.emit('productRemoved', pid);
+	req.io.emit('productRemoved', pid);
 	res.status(200).json({message: "Producto eliminado"});
 });
 
